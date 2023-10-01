@@ -1,26 +1,13 @@
-### Refactor into Bash Scripts
+## Semantic Versioning :mage:
 
-worked on fixing the Terraform CLI gpg depreciation issue by creating bash scripts to install Terraform CLI
+The project will use semantic versioning for it's tagging. [semver.org](https://semver.org/)
 
+The general format is **MAJOR.MINOR.PATCH**, for example, `1.0.1` 
 
-### Linux Distribution
+- **MAJOR** version when you make incompatible API changes
+- **MINOR** version when you add functionality in a backward compatible manner
+- **PATCH** version when you make backward compatible bug fixes
 
-Project built based on Ubuntu. Check your OS Version using command
+Additional labels for pre-release and build metadata are available as extensions 
+to the MAJOR.MINOR.PATCH format.
 
-```
-$cat /etc/os-release
-
-PRETTY_NAME="Ubuntu 22.04.3 LTS"
-NAME="Ubuntu"
-VERSION_ID="22.04"
-VERSION="22.04.3 LTS (Jammy Jellyfish)"
-VERSION_CODENAME=jammy
-ID=ubuntu
-ID_LIKE=debian
-HOME_URL="https://www.ubuntu.com/"
-SUPPORT_URL="https://help.ubuntu.com/"
-BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-UBUNTU_CODENAME=jammy
-
- ```
