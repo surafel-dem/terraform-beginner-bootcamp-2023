@@ -1,4 +1,4 @@
-## Semantic Versioning 
+## Semantic Versioning :mage:
 
 The project will use semantic versioning for it's tagging. [semver.org](https://semver.org/)
 
