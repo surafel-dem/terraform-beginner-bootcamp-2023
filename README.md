@@ -24,19 +24,8 @@ This project is built against Ubuntu. Check your Linux distribution and change a
 
 
 ### Considerations for Linux Distribution
-$ cat /etc/os-release
-PRETTY_NAME="Ubuntu 22.04.3 LTS"
-NAME="Ubuntu"
-VERSION_ID="22.04"
-VERSION="22.04.3 LTS (Jammy Jellyfish)"
-VERSION_CODENAME=jammy
-ID=ubuntu
-ID_LIKE=debian
-HOME_URL="https://www.ubuntu.com/"
-SUPPORT_URL="https://help.ubuntu.com/"
-BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-UBUNTU_CODENAME=jammy 
+
+
 
 ### Shebang Considerations
 
@@ -109,6 +98,33 @@ gp env HELLO='world
 All future workspaces launched will set the env vars for all bash terminals in those workspaces.
 
 You can also set en vars in the '.gitpod.yml' but this can only contain non-sensitive env vars.
+
+
+### AWS CLI Installation
+
+AWs CLI is installed for the project via the bash script ['./bin/install_aws_cli] 
+
+[Getting Started install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+
+[AWS CLI Env Vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+We can check if our AWS credentials is configured correctly by running the following command:
+
+```sh
+aws sts get-caller-identity
+
+```
+
+If it's succsesfull you should see a json paylod return that look like this:
+
+```json
+{
+    "UserId": "BIXARZHRXF6NBZ52PASYS",
+    "Account": "123456789012",
+    "Arn": "arn:aws:iam::12345678012:user/terraform-beginner-bootcamp"
+}
+```
 
 
 
