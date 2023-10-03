@@ -126,6 +126,8 @@ If it's succsesfull you should see a json paylod return that look like this:
 }
 ```
 
+We'll need to generate AWS CLI credentials from IAM user in order to use AWS CLI
+
 
 
 
